@@ -74,13 +74,10 @@ class MainWindow(QtWidgets.QWidget):
             self.status = 0
         
         self.btn1.setText(On_Off[self.status])
-        
-        self.timer.stop()
-        
+    
         if self.status == 1:
             self.do_click()
 
-        
         
     def do_click(self):
         if self.status == 0:
